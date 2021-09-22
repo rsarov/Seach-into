@@ -5,6 +5,9 @@
         'Google',
         'Bing',
         'DuckDuckGo',
+        'YouTube',
+        'StackOverflow',
+        'GitHub'
     ];
 
     var urls = [
@@ -12,6 +15,9 @@
         'https://www.google.com/search?q=',
         'https://www.bing.com/search?q=',
         'https://duckduckgo.com/?q=',
+        'https://www.youtube.com/results?search_query=',
+        'https://stackoverflow.com/search?q=',
+        'https://github.com/search?q=',
     ];
 
     chrome.runtime.onInstalled.addListener(function () {

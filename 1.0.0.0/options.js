@@ -5,6 +5,9 @@ window.onload = function () {
         'Google',
         'Bing',
         'DuckDuckGo',
+        'YouTube',
+        'StackOverflow',
+        'GitHub',
     ];
 
     const selectElement = document.getElementById('select');
@@ -28,13 +31,22 @@ window.onload = function () {
                 case 3:
                     selectElement.selectedIndex = 3;
                     break;
+                case 4:
+                    selectElement.selectedIndex = 4;
+                    break;
+                case 5:
+                    selectElement.selectedIndex = 5;
+                    break;
+                case 6:
+                    selectElement.selectedIndex = 6;
+                    break;
                 default:
                     break;
             }
         }
         else {
             if (idx == -1) {
-                selectElement.selectedIndex = 4;
+                selectElement.selectedIndex = 7;
             }
             else {
                 selectElement.selectedIndex = 0;
@@ -57,6 +69,15 @@ window.onload = function () {
                 break;
             case 'DuckDuckGo':
                 chrome.storage.sync.set({ key: 3 });
+                break;
+            case 'YouTube':
+                chrome.storage.sync.set({ key: 4 });
+                break;
+            case 'StackOverflow':
+                chrome.storage.sync.set({ key: 5 });
+                break;
+            case 'GitHub':
+                chrome.storage.sync.set({ key: 6 });
                 break;
             default:
                 chrome.storage.sync.set({ key: -1 });
