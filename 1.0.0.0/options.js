@@ -8,6 +8,7 @@ window.onload = function () {
         'YouTube',
         'StackOverflow',
         'GitHub',
+        'You.com',
     ];
 
     const selectElement = document.getElementById('select');
@@ -40,13 +41,16 @@ window.onload = function () {
                 case 6:
                     selectElement.selectedIndex = 6;
                     break;
+                case 7:
+                    selectElement.selectedIndex = 7;
+                    break;
                 default:
                     break;
             }
         }
         else {
             if (idx == -1) {
-                selectElement.selectedIndex = 7;
+                selectElement.selectedIndex = 9;
             }
             else {
                 selectElement.selectedIndex = 0;
@@ -78,6 +82,9 @@ window.onload = function () {
                 break;
             case 'GitHub':
                 chrome.storage.sync.set({ key: 6 });
+                break;
+            case 'You.com':
+                chrome.storage.sync.set({ key: 7 });
                 break;
             default:
                 chrome.storage.sync.set({ key: -1 });

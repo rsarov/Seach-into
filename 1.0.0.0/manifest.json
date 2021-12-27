@@ -2,14 +2,14 @@
    "background": {
       "service_worker": "main.js"
    },
-   "description": "Easily search selected text in any search.",
+   "description": "Easily search selected text in any search engines.",
    "icons": {
       "128": "icons/128.png",
       "48": "icons/48.png",
       "32": "icons/32.png"
    },
    "manifest_version": 3,
-   "name": "Seach into",
+   "name": "Search into",
    "options_page": "options.html",
    "permissions": [
       "activeTab",

@@ -7,7 +7,8 @@
         'DuckDuckGo',
         'YouTube',
         'StackOverflow',
-        'GitHub'
+        'GitHub',
+        'You.com'
     ];
 
     var urls = [
@@ -18,6 +19,7 @@
         'https://www.youtube.com/results?search_query=',
         'https://stackoverflow.com/search?q=',
         'https://github.com/search?q=',
+        'https://you.com/search?q='
     ];
 
     chrome.runtime.onInstalled.addListener(function () {
